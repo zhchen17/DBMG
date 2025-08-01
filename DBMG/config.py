@@ -1,0 +1,21 @@
+import argparse
+
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--train_json', type=str, default='E:/pythonproject/CR/Pascal_Sentence/train_data/train.json')
+    parser.add_argument('--val_json', type=str, default='E:/pythonproject/CR/Pascal_Sentence/train_data/val.json')
+    parser.add_argument('--test_json', type=str, default='E:/pythonproject/CR/Pascal_Sentence/train_data/val.json')
+    parser.add_argument('--image_root', type=str, default='E:/pythonproject/CR/Pascal_Sentence/image')
+    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--eval_batch_size', type=int, default=32)
+    parser.add_argument('--num_workers', type=int, default=0)
+    parser.add_argument('--num_epochs', type=int, default=50)
+    parser.add_argument('--lr', type=float, default=1e-5)
+    parser.add_argument('--weight_decay', type=float, default=1e-2)
+    parser.add_argument('--lr_step_size', type=int, default=5)
+    parser.add_argument('--lr_gamma', type=float, default=0.9)
+    parser.add_argument('--text_max_length', type=int, default=40)
+    parser.add_argument('--hidden_dim', type=int, default=96)
+    parser.add_argument('--device', type=str, default='npu')
+    parser.add_argument('--save_dir', type=str, default='checkpoints/')
+    return parser.parse_args()
