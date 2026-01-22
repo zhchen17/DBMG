@@ -21,10 +21,6 @@ pip install torch_npu -f https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/pyt
 ### Step 2: Download the Pre-trained CLIP Model and Datasets.
 ```bash
 You can download the pre-trained CLIP model used in this paper from the following link: https://huggingface.co/openai/clip-vit-base-patch32
-Wikipedia: http://www.svcl.ucsd.edu/projects/crossmodal/
-NUS-WIDE: http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm
-XMediaNet: http://www.icst.pku.edu.cn/mipl/XMedia/
-Pascal-Sentence: https://vision.cs.uiuc.edu/pascal-sentences/
 ```
 
 ### Step 3: Start the training
