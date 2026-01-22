@@ -31,10 +31,4 @@ Pascal-Sentence: https://vision.cs.uiuc.edu/pascal-sentences/
 
 Download the required datasets from the following links and place them in the ./data/ directory:
 ```bash
-python main.py
-```
-### Step Start Training
-To start training, run the following command:
-```bash
-python train.py 
-```
+python train.py
